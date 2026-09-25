@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz ESP32</title>
+    <link rel="stylesheet" href="./Voz-esp32-main/Voz-esp32-main/">
+</head>
+
+<body>
+
+    <main class="painel">
+
+        <h1>Controle por Comando de Voz</h1>
+
+        <p>
+            Clique no botão e diga <strong>"ligar"</strong> ou
+            <strong>"desligar"</strong>.
+        </p>
+
+        <div id="status-microfone" class="status desligado">
+            <span class="indicador"></span>
+            <span id="status-texto">Microfone desligado.</span>
+        </div>
+
+        <div class="resultado">
+            <span class="rotulo">O site entendeu:</span>
+            <p id="feedback">Nenhuma fala reconhecida ainda.</p>
+        </div>
+
+        <button id="btn-escutar">
+            🎙️ Ativar Microfone
+        </button>
+
+    </main>
+
+    <script type="module" src="./script.js"></script>
+
+</body>
+</html>
